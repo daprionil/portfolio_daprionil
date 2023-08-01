@@ -1,7 +1,11 @@
+import { Route, Routes } from "react-router-dom";
+
 function App() {
-  return (
-    <p className="p-2 m-2 bg-red-600 rounded-md shadow">Lorem, ipsum.</p>
-  );
+    return (
+        <Routes>
+            <Route path="/" element={<p>home</p>} />
+        </Routes>
+    );
 }
 
 export default App;
