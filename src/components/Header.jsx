@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
-        <header className=" bg-gray-800 fixed w-full p-4 rounded-b-xl shadow-app text-white grid grid-cols-1 md:grid-cols-2 items-center justify-items-center">
+        <header className=" bg-gray-800 w-full fixed p-4 rounded-b-xl shadow-app text-white grid grid-cols-1 md:grid-cols-2 items-center justify-items-center z-[100]">
             <div className="">
-                <p className="font-black text-3xl bg-gradient-text-header">David Bulla</p>
+                <p className="font-black text-4xl bg-gradient-text-header">David Bulla</p>
             </div>
             <div className="">
                 <nav className="">
