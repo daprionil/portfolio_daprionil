@@ -8,6 +8,9 @@
     .bg-gradient-text-header{
         @apply bg-gradient-to-br from-blue-200 to-red-700 bg-clip-text text-transparent
     }
+    .shadow-app{
+        @apply shadow-xl shadow-zinc-700
+    }
 }
 
 @layer base{
