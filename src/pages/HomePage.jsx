@@ -15,7 +15,7 @@ function HomePage() {
                     <img
                         src={ImageDaprion}
                         alt="daprionil"
-                        className='max-w-[250px] md:max-w-[300px] lg:max-w-[450px] rounded-xl shadow-[10px_-10px_0_white,-10px_-10px_0_black,0_-5px_1px_black] absolute -top-1/3 sm:-top-[25%] md:top-[20%] mx-auto lg:top-1/2 transform md:-translate-y-1/2'
+                        className='max-w-[250px] md:max-w-[300px] lg:max-w-[450px] rounded-xl shadow-[10px_-10px_0_white,-10px_-20px_0_black,0_-5px_10px_black] absolute -top-1/3 sm:-top-[25%] md:top-[20%] mx-auto lg:top-1/2 transform md:-translate-y-1/2'
                     />
                     <h1 className='absolute top-1/3 sm:bottom-[15%] lg:top-auto md:bottom-[20%] drop-shadow-[0_0_20px_black] md:text-6xl text-center text-white font-black text-5xl'>
                         Full Stack Web <br /> Developer

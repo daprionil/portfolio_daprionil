@@ -20,10 +20,31 @@
         position: absolute;
         @apply  bg-stone-300 hidden sm:block top-1/2 transform -translate-y-1/2 bg-opacity-30 lg:w-[400px] lg:h-[400px] md:w-[250px] md:h-[250px] h-[150px] w-[150px] ;
     }
+    .btn{
+        border: none;
+        outline: none;
+        @apply rounded-md px-6 py-2 text-white font-bold text-xl cursor-pointer transition duration-300 transform hover:scale-[101%] w-min whitespace-nowrap
+    }
+    .shadow-inner-white{
+        box-shadow: inner 10px 0 20px white;
+    }
 }
 
 @layer base{
     *{
         font-family: 'Raleway', sans-serif;
+    }
+    input{
+        border: none;
+        outline: none;
+        background: none;
+        @apply px-2 py-1 shadow-xl rounded-lg w-full text-stone-700
+    }
+    textarea{
+        resize: none;
+        border: none;
+        outline: none;
+        background: none;
+        @apply px-2 py-1 shadow-xl rounded-lg w-full text-stone-700
     }
 }
