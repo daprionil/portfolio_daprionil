@@ -1,4 +1,5 @@
 import { ReactComponent as WaveBackground } from '../assets/waveHome.svg';
+import ImageDaprion from '../assets/bg_background_personal.png';
 
 function HomePage() {
     return (
@@ -10,12 +11,18 @@ function HomePage() {
                     <p className="text-opacity-70 drop-shadow-2xl -mt-4 sm:-mt-6 lg:-mt-9 -tracking-wider before:content-[''] before:z-9 before:w-20 relative before:bg-black before:opacity-25 before:bottom-6 before:h-2 before:absolute text-yellow-500">CREATIVIDAD</p>
                     <p className="text-opacity-70 drop-shadow-2xl -mt-4 sm:-mt-6 lg:-mt-9 -tracking-wider before:content-[''] before:z-9 before:w-20 relative before:bg-black before:opacity-25 before:bottom-6 before:h-2 before:absolute text-blue-500">SUPERACIÓN</p>
                 </article>
-                <article className='w-full drop-shadow-2xl h-full relative self-center flex items-start md:items-center lg:items-center justify-center before:shadow-home-shape'>
-                    <span className='w-11 h-11 bg-blue top-0 absolute rounded-full'></span>
-                    <h1 className='text-white lg:text-8xl drop-shadow-2xl z-20 text-opacity-80 sm:text-white text-4xl md:text-6xl text-center font-black'>FullStack Web <br /> Developer</h1>
+                <article className='z-10 w-full drop-shadow-2xl h-full relative self-center flex items-start sm:items-center lg:items-center justify-center before:shadow-home-shape'>
+                    <img
+                        src={ImageDaprion}
+                        alt="daprionil"
+                        className='max-w-[250px] md:max-w-[300px] lg:max-w-[450px] rounded-xl shadow-[10px_-10px_0_white,-10px_-10px_0_black,0_-5px_1px_black] absolute top-[20%] mx-auto lg:top-1/2 transform md:-translate-y-1/2'
+                    />
+                    <h1 className='absolute md:bottom-[20%] md:drop-shadow-[0_0_20px_black] md:text-6xl text-center text-white font-black text-5xl'>
+                        Full Stack Web <br /> Developer
+                    </h1>
                 </article>
             </section>
-            <div className='absolute bottom-0 z-2 text-black w-full opacity-40'>
+            <div className='absolute bottom-0 z-0 text-black w-full opacity-40'>
                 <WaveBackground />
             </div>
         </div>
