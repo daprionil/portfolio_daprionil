@@ -1,4 +1,7 @@
 import DogestImg1 from '../assets/dogest_image_1.png';
+import DogestImg2 from '../assets/dogest_image_2.png';
+import DogestImg3 from '../assets/dogest_image_3.png';
+import DogestImg4 from '../assets/dogest_image_4.png';
 import RDSImage1 from '../assets/rds_image.png';
 
 const projects = [
@@ -29,7 +32,10 @@ const projects = [
         name: 'Dogest',
         description:'Es una plataforma con gestión de usuarios y rutas privadas en donde puedes como usuario; Buscar, Crear y agregar a tus favoritos las razas que más de tu gusten.',
         images:[
-            DogestImg1
+            DogestImg1,
+            DogestImg2,
+            DogestImg3,
+            DogestImg4
         ],
         role:' Full Stack Web Developer',
         github:'https://github.com/daprionil/pi_dogs',

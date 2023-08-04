@@ -28,6 +28,9 @@
     .shadow-inner-white{
         box-shadow: inner 10px 0 20px white;
     }
+    .title-h1{
+        @apply font-bold text-2xl sm:text-3xl md:text-4xl text-white drop-shadow
+    }
 }
 
 @layer base{

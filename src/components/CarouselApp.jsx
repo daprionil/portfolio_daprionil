@@ -12,7 +12,7 @@ const CarouselApp = ({ images = [] }) => {
             horizontal={true}
             bound={false}
             plugins={plugins}
-            className="shadow-lg"
+            className="shadow-lg min-w-[300px] rounded-xl"
         >
             {
                 images.map((src, idx) => (
