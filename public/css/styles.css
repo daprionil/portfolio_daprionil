@@ -780,24 +780,14 @@ textarea{
 .opacity-40{
   opacity: 0.4;
 }
-.shadow-\[10px_-10px_0_white\2c -10px_-10px_0_black\2c 0_-5px_1px_black\]{
-  --tw-shadow: 10px -10px 0 white,-10px -10px 0 black,0 -5px 1px black;
-  --tw-shadow-colored: 10px -10px 0 var(--tw-shadow-color), -10px -10px 0 var(--tw-shadow-color), 0 -5px 1px var(--tw-shadow-color);
+.shadow-\[10px_-10px_0_white\2c -10px_-20px_0_black\2c 0_-5px_10px_black\]{
+  --tw-shadow: 10px -10px 0 white,-10px -20px 0 black,0 -5px 10px black;
+  --tw-shadow-colored: 10px -10px 0 var(--tw-shadow-color), -10px -20px 0 var(--tw-shadow-color), 0 -5px 10px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-inner{
   --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.shadow-\[10px_-10px_0_white\2c -10px_-10px_0_black\2c 0_-5px_10px_black\]{
-  --tw-shadow: 10px -10px 0 white,-10px -10px 0 black,0 -5px 10px black;
-  --tw-shadow-colored: 10px -10px 0 var(--tw-shadow-color), -10px -10px 0 var(--tw-shadow-color), 0 -5px 10px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.shadow-\[10px_-10px_0_white\2c -10px_-20px_0_black\2c 0_-5px_10px_black\]{
-  --tw-shadow: 10px -10px 0 white,-10px -20px 0 black,0 -5px 10px black;
-  --tw-shadow-colored: 10px -10px 0 var(--tw-shadow-color), -10px -20px 0 var(--tw-shadow-color), 0 -5px 10px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .drop-shadow-2xl{
@@ -816,7 +806,6 @@ textarea{
 .duration-300{
   transition-duration: 300ms;
 }
-
 .before\:shadow-home-shape::before{
         border-radius: 50% 25% 30% 10% / 60%;
         box-shadow: 180px 30px 0 rgba(255, 64, 64, .5),
@@ -834,14 +823,12 @@ textarea{
         background-color: rgb(214 211 209 / var(--tw-bg-opacity));
         --tw-bg-opacity: 0.3;
     }
-
 @media (min-width: 640px){
 
   .before\:shadow-home-shape::before{
     display: block;
   }
 }
-
 @media (min-width: 768px){
 
   .before\:shadow-home-shape::before{
@@ -849,7 +836,6 @@ textarea{
     width: 250px;
   }
 }
-
 @media (min-width: 1024px){
 
   .before\:shadow-home-shape::before{
@@ -857,48 +843,39 @@ textarea{
     width: 400px;
   }
 }
-
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
 }
-
 .before\:bottom-6::before{
   content: var(--tw-content);
   bottom: 1.5rem;
 }
-
 .before\:h-2::before{
   content: var(--tw-content);
   height: 0.5rem;
 }
-
 .before\:w-20::before{
   content: var(--tw-content);
   width: 5rem;
 }
-
 .before\:bg-black::before{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-
 .before\:opacity-25::before{
   content: var(--tw-content);
   opacity: 0.25;
 }
-
 .before\:content-\[\'\'\]::before{
   --tw-content: '';
   content: var(--tw-content);
 }
-
 .hover\:border-gray-600:hover{
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
-
 @media (min-width: 640px){
 
   .sm\:-top-\[25\%\]{
@@ -926,7 +903,6 @@ textarea{
     line-height: 1;
   }
 }
-
 @media (min-width: 768px){
 
   .md\:bottom-\[20\%\]{
@@ -959,7 +935,6 @@ textarea{
     line-height: 1;
   }
 }
-
 @media (min-width: 1024px){
 
   .lg\:top-1\/2{
