@@ -3,6 +3,8 @@ import DogestImg2 from '../assets/dogest_image_2.png';
 import DogestImg3 from '../assets/dogest_image_3.png';
 import DogestImg4 from '../assets/dogest_image_4.png';
 import RDSImage1 from '../assets/rds_image.png';
+import RDSImage2 from '../assets/rds_image1.png';
+import RDSImage3 from '../assets/rds_image2.png';
 
 const projects = [
     {
@@ -12,7 +14,9 @@ const projects = [
         github:'https://github.com/Marifuhr/el_rincon_del_sabiondo',
         deploy:' el-rincon-del-sabiondo-eta.vercel.app ',
         images:[
-            RDSImage1
+            RDSImage1,
+            RDSImage2,
+            RDSImage3
         ],
         tecnologies:[
             'PostgreSQL',
