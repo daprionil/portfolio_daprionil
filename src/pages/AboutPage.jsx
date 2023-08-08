@@ -10,10 +10,10 @@ function AboutPage() {
                     <span className='absolute shadow-xl bg-indigo-500 rounded-2xl h-full w-[98%] sm:max-w-[450px] -bottom-1 duration-300 transition-all group-hover:-bottom-5 right-0 group-hover:right-3'></span>
                     <span className='absolute shadow-xl bg-red-500 rounded-2xl h-full w-[98%] sm:max-w-[450px] -top-1 duration-300 transition-all group-hover:-top-5 group-hover:'></span>
                 </div>
-                <div className='flex justify-start flex-col max-w-xl gap-3 pb-3 drop-shadow-md'>
+                <div className='flex justify-start flex-col max-w-xl gap-3 pb-3'>
                     <h1 className='title-h1 text-white border-b-2'>Sobre mi</h1>
-                    <p className='text-white'>Soy un Desarrollador web entusiasmado por la tecnología y su código; me maravilla la idea de que todo lo que vemos está programado en código.</p>
-                    <p className='text-white'>Desde el transcurso de mi carrera tecnológica en la Universidad me vi impactado por la programación y desde mis 16 años comenzó mi introducción a este mundo 🌱; En la Universidad adquirí la vocación Tech y la capacidad resolutiva de problemas zap, posterior a esto adquirí conocimientos por más de un año de forma autodidacta y seguido consolidé mis habilidades con el Bootcamp de Soy Henry en donde cursé más de 800 horas para ser un profesional aún más productivo como Desarrollador web Full Stack</p>
+                    <p className='md:text-lg text-white'>Soy un Desarrollador web entusiasmado por la tecnología y su código; me maravilla la idea de que todo lo que vemos está programado en código.</p>
+                    <p className='md:text-lg text-white'>Desde el transcurso de mi carrera tecnológica en la Universidad me vi impactado por la programación y desde mis 16 años comenzó mi introducción a este mundo; En la Universidad adquirí la vocación Tech y la capacidad resolutiva de problemas, posterior a esto adquirí conocimientos por más de un año de forma autodidacta y seguido consolidé mis habilidades con el Bootcamp de Soy Henry en donde cursé más de 800 horas para ser un profesional aún más productivo como Desarrollador web Full Stack</p>
                 </div>
             </article>
             <div className="h-3/4 drop-shadow-xl">
