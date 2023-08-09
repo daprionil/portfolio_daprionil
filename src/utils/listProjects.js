@@ -16,7 +16,7 @@ const projects = [
         description:'El rincón del sabiondo, una excelente plataforma para los amantes de la lectura; elije y compra los libros de tu elección.',
         role:' Full Stack Web Developer',
         github:'https://github.com/Marifuhr/el_rincon_del_sabiondo',
-        deploy:' el-rincon-del-sabiondo-eta.vercel.app ',
+        deploy:'https://el-rincon-del-sabiondo-eta.vercel.app ',
         images:[
             RDSImage1,
             RDSImage2,
@@ -47,7 +47,7 @@ const projects = [
         ],
         role:' Full Stack Web Developer',
         github:'https://github.com/daprionil/pi_dogs',
-        deploy:'pi-dogs-daprionil.vercel.app',
+        deploy:'https://pi-dogs-daprionil.vercel.app',
         tecnologies:[
             'PostgreSQL',
             'Express JS',
