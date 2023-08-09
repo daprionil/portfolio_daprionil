@@ -37,25 +37,6 @@ const projects = [
         
     },
     {
-        name: 'Firebase Task App',
-        description:'CRUD Application; Gestiona multiproposito las tareas de tu vida cotiadiana',
-        role:'Full Stack Web Developer',
-        github:'https://github.com/Marifuhr/el_rincon_del_sabiondo',
-        images:[
-            FirebaseTaskAppImage1,
-            FirebaseTaskAppImage2,
-            FirebaseTaskAppImage3
-        ],
-        tecnologies:[
-            'React',
-            'Redux',
-            'Redux Thunk',
-            'TailwindCSS',
-            'Firebase',
-        ],
-        
-    },
-    {
         name: 'Dogest',
         description:'Es una plataforma con gestión de usuarios y rutas privadas en donde puedes como usuario; Buscar, Crear y agregar a tus favoritos las razas que más de tu gusten.',
         images:[
@@ -74,6 +55,25 @@ const projects = [
             'React JS',
             'Redux',
             'React Router',
+            'TailwindCSS',
+            'Firebase',
+        ],
+        
+    },
+    {
+        name: 'Firebase Task App',
+        description:'CRUD Application; Gestiona multiproposito las tareas de tu vida cotiadiana',
+        role:'Full Stack Web Developer',
+        github:'https://github.com/Marifuhr/el_rincon_del_sabiondo',
+        images:[
+            FirebaseTaskAppImage1,
+            FirebaseTaskAppImage2,
+            FirebaseTaskAppImage3
+        ],
+        tecnologies:[
+            'React',
+            'Redux',
+            'Redux Thunk',
             'TailwindCSS',
             'Firebase',
         ],

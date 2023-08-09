@@ -17,8 +17,6 @@ const CardProject = ({ name, role, description, github, deploy, images, tecnolog
         const rotationX = ((offsetX - halfWidth) / halfWidth) * 15;
         const rotationY = ((offsetY - halfHeight) / halfHeight) * 15;
 
-        console.log(event);
-
         $.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg) scale(1.03)`;
     };
 
