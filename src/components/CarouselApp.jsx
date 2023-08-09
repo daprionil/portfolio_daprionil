@@ -21,7 +21,7 @@ const CarouselApp = ({ images = [] }) => {
                         <img
                             src={src}
                             alt={`carousel_image_${name}_${idx + 1}`}
-                            className="w-full h-full object-cover z-1"
+                            className="w-full h-full object-cover aspect-video z-1"
                         />
                     </div>
                 ))

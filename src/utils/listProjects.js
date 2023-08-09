@@ -6,6 +6,10 @@ import RDSImage1 from '../assets/rds_image.png';
 import RDSImage2 from '../assets/rds_image1.png';
 import RDSImage3 from '../assets/rds_image2.png';
 
+import FirebaseTaskAppImage1 from '../assets/firebase_task_app1.jpeg';
+import FirebaseTaskAppImage2 from '../assets/firebase_task_app2.jpeg';
+import FirebaseTaskAppImage3 from '../assets/firebase_task_app3.jpeg';
+
 const projects = [
     {
         name: 'El rincón del sabiondo',
@@ -29,6 +33,25 @@ const projects = [
             'Cloudinary',
             'MercadoPago',
             'Auth0',
+        ],
+        
+    },
+    {
+        name: 'Firebase Task App',
+        description:'CRUD Application; Gestiona multiproposito las tareas de tu vida cotiadiana',
+        role:'Full Stack Web Developer',
+        github:'https://github.com/Marifuhr/el_rincon_del_sabiondo',
+        images:[
+            FirebaseTaskAppImage1,
+            FirebaseTaskAppImage2,
+            FirebaseTaskAppImage3
+        ],
+        tecnologies:[
+            'React',
+            'Redux',
+            'Redux Thunk',
+            'TailwindCSS',
+            'Firebase',
         ],
         
     },

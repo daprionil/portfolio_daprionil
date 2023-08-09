@@ -32,7 +32,7 @@ const CardProject = ({ name, role, description, github, deploy, images, tecnolog
             <div onMouseLeave={handleLeaveCard} onMouseMove={handleMove} ref={refCard} className="sm:max-w-[400px] w-full perspective-card transition duration-100">
                 <CarouselApp images={images} />
             </div>
-            <div className="text-left px-2 pl-3">
+            <div className="text-left px-2 pl-3 w-full">
                 <div className="flex flex-wrap border-b-2 justify-between items-center">
                     <p className="whitespace-nowrap title-h1 text-xl text-black">{name}</p>
                     <p className="whitespace-nowrap underline text-sm">{role}</p>
@@ -49,8 +49,12 @@ const CardProject = ({ name, role, description, github, deploy, images, tecnolog
                     </div>
                 </div>
                 <div className="flex justify-end items-center">
-                    <GitHubButton url={github} />
-                    <DeployButton url={deploy} />
+                    {
+                        github && <GitHubButton url={github}/>
+                    }
+                    {
+                        deploy && <DeployButton url={deploy} />
+                    }
                 </div>
             </div>
         </div>

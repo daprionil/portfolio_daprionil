@@ -1,9 +1,9 @@
 import { ReactComponent as WaveContact } from '../assets/wave_contact.svg';
 function ContactPage() {
     return (
-        <section className="h-full shadow-inner-white bg-red-500 text-white">
+        <section className="h-full shadow-inner-white bg-yellow-400 text-white">
             <div className="flex gap-3 items-center justify-center flex-col p-2 w-full h-full relative">
-                <h1 className="font-bold text-5xl">Contactame</h1>
+                <h1 className="title-h1 text-5xl">Contactame</h1>
                 <article className="max-w-[700px] w-full p-2 z-10">
                     <form className=" flex flex-col gap-3">
                         <label htmlFor="fullname" className="text-xl font-bold">

@@ -29,7 +29,10 @@
         box-shadow: inner 10px 0 20px white;
     }
     .title-h1{
-        @apply font-bold text-2xl sm:text-3xl md:text-4xl text-white drop-shadow
+        @apply font-black text-2xl sm:text-3xl md:text-4xl text-white drop-shadow
+    }
+    .title-h2{
+        @apply font-bold text-lg sm:text-xl drop-shadow
     }
     .perspective-card{
         perspective: 1000px;
