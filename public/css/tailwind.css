@@ -1,3 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap');
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer components{
+    .bg-gradient-text-header{
+        @apply bg-gradient-to-br from-blue-200 to-red-700 bg-clip-text text-transparent
+    }
+    .shadow-app{
+        @apply shadow-[0_1px_25px_rgba(0,0,0,.2)]
+    }
+    .shadow-home-shape{
+        border-radius: 50% 25% 30% 10% / 60%;
+        box-shadow: 180px 30px 0 rgba(255, 64, 64, .5),
+        -80px -60px 0 rgba(26, 194, 255, .8),
+        50px -40px 0 rgba(255, 255, 84, .6);
+        content: "";
+        position: absolute;
+        @apply  bg-stone-300 hidden sm:block top-1/2 transform -translate-y-1/2 bg-opacity-30 lg:w-[400px] lg:h-[400px] md:w-[250px] md:h-[250px] h-[150px] w-[150px] ;
+    }
+    .btn{
+        border: none;
+        outline: none;
+        @apply rounded-md px-6 py-2 text-white font-bold text-xl cursor-pointer transition duration-300 transform hover:scale-[101%] w-min whitespace-nowrap
+    }
+    .shadow-inner-white{
+        box-shadow: inner 10px 0 20px white;
+    }
+    .title-h1{
+        @apply font-black text-2xl sm:text-3xl md:text-4xl text-white drop-shadow
+    }
+    .title-h2{
+        @apply font-bold text-lg sm:text-xl drop-shadow
+    }
+    .perspective-card{
+        perspective: 1000px;
+    }
+}
+
+@layer base{
+    *{
+        font-family: 'Raleway', sans-serif;
+    }
+    input{
+        border: none;
+        outline: none;
+        background: none;
+        @apply px-2 py-1 shadow-xl rounded-lg w-full text-stone-700
+    }
+    textarea{
+        resize: none;
+        border: none;
+        outline: none;
+        background: none;
+        @apply px-2 py-1 shadow-xl rounded-lg w-full text-stone-700
+    }
+}
