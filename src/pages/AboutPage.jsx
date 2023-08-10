@@ -1,9 +1,11 @@
+import { Title } from 'react-head';
 import ImageDaprion from '../assets/bg_background_personal.png';
 import IconTecnology from '../components/IconTecnology';
 import listTecnologies from '../utils/listTecnologies';
 function AboutPage() {
     return (
         <section className="h-full bg-sky-500 relative overflow-y-auto">
+            <Title>Sobre mi</Title>
             <article className="w-full h-full z-20 grid grid-cols-1 mt-20 md:mt-0 md:grid-cols-2 gap-0 md:gap-16 justify-center justify-items-center md:justify-items-stretch items-center px-10">
                 <div className='flex justify-end z-20 relative group'>
                     <img className='rounded-2xl z-20 group-hover:scale-[101%] transition duration-300 transform' src={ImageDaprion} alt="" />

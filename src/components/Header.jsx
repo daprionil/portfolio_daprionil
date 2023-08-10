@@ -11,27 +11,27 @@ function Header() {
                     <ul className="flex gap-3 font-bold">
                         <NavLink to="/" className={({isActive}) => isActive ? 'border-red-500 border-b-2' : null}>
                             <li className=" whitespace-nowrap border-transparent border-b-2 transition-all duration-300 hover:border-gray-600">
-                                Home
+                                Inicio
                             </li>
                         </NavLink>
                         <NavLink to="/about" className={({isActive}) => isActive ? 'border-red-500 border-b-2' : null}>
                             <li className=" whitespace-nowrap border-transparent border-b-2 transition-all duration-300 hover:border-gray-600">
-                                About
+                                Sobre mi
                             </li>
                         </NavLink>
                         <NavLink to="/experience" className={({isActive}) => isActive ? 'border-red-500 border-b-2' : null}>
                             <li className=" whitespace-nowrap border-transparent border-b-2 transition-all duration-300 hover:border-gray-600">
-                                Experience
+                                Experiencia
                             </li>
                         </NavLink>
                         <NavLink to="/projects" className={({isActive}) => isActive ? 'border-red-500 border-b-2' : null}>
                             <li className=" whitespace-nowrap border-transparent border-b-2 transition-all duration-300 hover:border-gray-600">
-                                Projects
+                                Proryectos
                             </li>
                         </NavLink>
                         <NavLink to="/contact" className={({isActive}) => isActive ? 'border-red-500 border-b-2' : null}>
                             <li className=" whitespace-nowrap border-transparent border-b-2 transition-all duration-300 hover:border-gray-600">
-                                Contact Me
+                                Contactame
                             </li>
                         </NavLink>
                     </ul>

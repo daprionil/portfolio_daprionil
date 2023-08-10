@@ -1,9 +1,11 @@
+import { Title } from 'react-head';
 import ImageCoder from '../assets/bg_experience.png';
 import listExperiences from "../utils/listExperiencesAcedemics";
 
 function ExperiencePage() {
     return (
         <section className="h-full relative bg-indigo-600 flex items-center justify-center flex-col">
+            <Title>Mi Trayectoria</Title>
             <div className='text-center z-10'>
                 <article className="pb-10">
                     <h1 className="title-h1 text-3xl sm:text-5xl ">Mi Trayectoria</h1>
