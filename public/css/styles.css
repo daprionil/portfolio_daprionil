@@ -679,11 +679,11 @@ textarea{
 .-mt-4{
   margin-top: -1rem;
 }
-.mt-20{
-  margin-top: 5rem;
-}
 .mt-28{
   margin-top: 7rem;
+}
+.mt-40{
+  margin-top: 10rem;
 }
 .flex{
   display: flex;
@@ -710,11 +710,11 @@ textarea{
   height: -moz-min-content;
   height: min-content;
 }
-.h-screen{
-  height: 100vh;
-}
 .max-h-\[100px\]{
   max-height: 100px;
+}
+.min-h-screen{
+  min-height: 100vh;
 }
 .w-12{
   width: 3rem;
@@ -801,9 +801,6 @@ textarea{
 .justify-items-center{
   justify-items: center;
 }
-.gap-0{
-  gap: 0px;
-}
 .gap-2{
   gap: 0.5rem;
 }
@@ -815,6 +812,9 @@ textarea{
 }
 .gap-7{
   gap: 1.75rem;
+}
+.gap-8{
+  gap: 2rem;
 }
 .self-center{
   align-self: center;
@@ -937,6 +937,10 @@ textarea{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -975,6 +979,12 @@ textarea{
 }
 .pt-10{
   padding-top: 2.5rem;
+}
+.pt-28{
+  padding-top: 7rem;
+}
+.pt-40{
+  padding-top: 10rem;
 }
 .text-left{
   text-align: left;
@@ -1311,8 +1321,8 @@ textarea{
     top: auto;
   }
 
-  .md\:mt-0{
-    margin-top: 0px;
+  .md\:flex{
+    display: flex;
   }
 
   .md\:-translate-y-1\/2{
@@ -1328,14 +1338,6 @@ textarea{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:justify-items-stretch{
-    justify-items: stretch;
-  }
-
-  .md\:gap-16{
-    gap: 4rem;
-  }
-
   .md\:self-center{
     align-self: center;
   }
@@ -1343,6 +1345,10 @@ textarea{
   .md\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .md\:pt-0{
+    padding-top: 0px;
   }
 
   .md\:text-6xl{

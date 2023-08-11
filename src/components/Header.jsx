@@ -26,7 +26,7 @@ function Header() {
                         </NavLink>
                         <NavLink to="/projects" className={({isActive}) => isActive ? 'border-red-500 border-b-2' : null}>
                             <li className=" whitespace-nowrap border-transparent border-b-2 transition-all duration-300 hover:border-gray-600">
-                                Proryectos
+                                Proyectos
                             </li>
                         </NavLink>
                         <NavLink to="/contact" className={({isActive}) => isActive ? 'border-red-500 border-b-2' : null}>

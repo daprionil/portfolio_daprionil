@@ -4,9 +4,9 @@ import listExperiences from "../utils/listExperiencesAcedemics";
 
 function ExperiencePage() {
     return (
-        <section className="h-full relative bg-indigo-600 flex items-center justify-center flex-col">
+        <section className="min-h-screen relative bg-indigo-600  md:flex items-center justify-center flex-col pb-10">
             <Title>Mi Trayectoria</Title>
-            <div className='text-center z-10'>
+            <div className='text-center pt-40 md:pt-0 z-10'>
                 <article className="pb-10">
                     <h1 className="title-h1 text-3xl sm:text-5xl ">Mi Trayectoria</h1>
                 </article>

@@ -6,7 +6,7 @@ function AboutPage() {
     return (
         <section className="h-full bg-sky-500 relative overflow-y-auto">
             <Title>Sobre mi</Title>
-            <article className="w-full h-full z-20 grid grid-cols-1 mt-20 md:mt-0 md:grid-cols-2 gap-0 md:gap-16 justify-center justify-items-center md:justify-items-stretch items-center px-10">
+            <article className="w-full z-20 px-10 grid md:grid-cols-2 grid-cols-1 justify-items-center items-center gap-8 justify-center mt-40">
                 <div className='flex justify-end z-20 relative group'>
                     <img className='rounded-2xl z-20 group-hover:scale-[101%] transition duration-300 transform' src={ImageDaprion} alt="" />
                     <span className='absolute shadow-xl bg-stone-300 rounded-2xl h-full w-[98%] sm:max-w-[450px] -bottom-4 duration-300 transition-all group-hover:-right-2 -right-0 group-hover:-bottom-1'></span>
