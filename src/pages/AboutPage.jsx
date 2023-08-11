@@ -4,7 +4,7 @@ import IconTecnology from '../components/IconTecnology';
 import listTecnologies from '../utils/listTecnologies';
 function AboutPage() {
     return (
-        <section className="h-full bg-sky-500 relative overflow-y-auto">
+        <section className="h-full min-h-screen bg-sky-500 relative overflow-y-auto">
             <Title>Sobre mi</Title>
             <article className="w-full z-20 px-10 grid md:grid-cols-2 grid-cols-1 justify-items-center items-center gap-8 justify-center mt-40">
                 <div className='flex justify-end z-20 relative group'>
