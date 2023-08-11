@@ -22,7 +22,7 @@ function AboutPage() {
             </article>
             <div className='flex items-center justify-center text-center flex-col z-20 pb-20'>
                 <h1 className="title-h1 py-10">Tecnologías</h1>
-                <div className='flex flex-wrap items-center justify-center gap-4'>
+                <div className='flex flex-wrap items-center justify-center gap-4 z-20'>
                     {
                         listTecnologies.map((tech, idx) => (
                             <IconTecnology {...tech} key={idx}/>
