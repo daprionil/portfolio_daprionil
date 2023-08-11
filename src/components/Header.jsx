@@ -3,9 +3,8 @@ import { NavLink, useHref, useLinkClickHandler } from "react-router-dom";
 import { Menu as MenuIcon, Close as CloseIcon} from '@mui/icons-material';
 
 function Header() {
-    const [ isOpen, setIsOpen ] = useState(false);
+    const [ isOpen, setIsOpen ] = useState(true);
     const refPath = useHref();
-
     const handleButtonOpen = () => setIsOpen(state => !state);
 
     useEffect(() => {
@@ -15,9 +14,9 @@ function Header() {
     return (
         <header className=" bg-gray-800 w-full fixed p-4 rounded-b-xl shadow-app text-white grid md:grid-cols-1 lg:grid-cols-2 grid-cols-2 items-center justify-items-center z-[100]">
             <div className="">
-                <p className="font-black text-4xl bg-gradient-text-header">David Bulla</p>
+                <p className="font-black text-xl md:text-4xl bg-gradient-text-header whitespace-nowrap">David Bulla</p>
             </div>
-            <div className={`fixed md:block w-full h-screen md:w-auto md:static md:h-auto md:bg-transparent md:bg-opacity-100 bg-slate-950 bg-opacity-40 shadow-xl ${isOpen ? 'bottom-0' : '-bottom-full'} left-0 z-[101] flex text-black md:text-white items-end transition-all duration-300`}>
+            <div className={`fixed md:block w-full h-screen md:w-auto md:static md:h-auto md:bg-transparent md:bg-opacity-100 bg-slate-950 bg-opacity-40 shadow-xl ${isOpen ? 'bottom-0' : '-bottom-[100vh]'} left-0 z-[101] flex text-black md:text-white items-end transition-all duration-300`}>
                 <nav className="h-[80vh] md:bg-transparent bg-slate-200 w-full md:h-auto flex items-center justify-center md:flex-wrap">
                     <ul className="flex gap-3 font-bold flex-col text-center text-xl md:text-md md:flex-row md:text-auto">
                         <NavLink to="/" className={({isActive}) => isActive ? 'border-red-500 border-b-2' : null}>
