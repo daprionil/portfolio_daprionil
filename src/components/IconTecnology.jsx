@@ -12,4 +12,4 @@ const IconTecnology = ({ name, url }) => {
     )
 }
 
-export default IconTecnology
+export default IconTecnology;
