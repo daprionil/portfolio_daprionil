@@ -47,7 +47,7 @@ const projects = [
         ],
         role:' Full Stack Web Developer',
         github:'https://github.com/daprionil/pi_dogs',
-        deploy:'https://pi-dogs-daprionil.vercel.app',
+        deploy:'https://dogest.vercel.app',
         tecnologies:[
             'PostgreSQL',
             'Express JS',
