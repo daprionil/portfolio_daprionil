@@ -2,6 +2,8 @@ import { Title } from 'react-head';
 import { ReactComponent as WaveContact } from '../assets/wave_contact.svg';
 import { useState } from 'react';
 import validationForm from '../utils/validationForm';
+import { sweetFalse } from '../utils/defaultTypeAlerts';
+import sendMail from '../controllers/sendMail';
 
 const initialValuesForm = {
     fullname:'',
@@ -32,10 +34,25 @@ function ContactPage() {
     };
 
     //! This fuction will validate the values before sending
-    const handleSubmit = evt => {
+    const handleSubmit = async evt => {
         evt.preventDefault();
+        
+        //* Revalidate form width current values
+        const resultValidation = validationForm(valuesForm);
+        setValidationsFields(resultValidation);
 
-        console.log(valuesForm);
+        //! Validate if exist current errors in form
+        const validationErrorsExists = Object.values(validationsFields).filter(v => v).length === 0;
+        
+        //? If Validation is true, then sendEmail
+        if(validationErrorsExists){
+            const responseMail = await sendMail(valuesForm);
+            console.log(responseMail);
+            return;
+        }
+
+        //! Display error alert
+        sweetFalse({message:'Debes de solucionar los errores del formulario para continuar'})
     };
 
     return (
