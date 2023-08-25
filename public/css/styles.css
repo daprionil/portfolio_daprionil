@@ -615,6 +615,22 @@ textarea{
 .perspective-card{
         perspective: 1000px;
     }
+.text-alert{
+  margin: 0.25rem;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.3;
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.error{
+        color: rgb(221, 33, 33);
+    }
 .fixed{
   position: fixed;
 }
@@ -630,8 +646,8 @@ textarea{
 .-bottom-4{
   bottom: -1rem;
 }
-.-bottom-full{
-  bottom: -100%;
+.-bottom-\[100vh\]{
+  bottom: -100vh;
 }
 .-right-0{
   right: -0px;
@@ -663,9 +679,6 @@ textarea{
 .top-1\/3{
   top: 33.333333%;
 }
-.-bottom-\[100vh\]{
-  bottom: -100vh;
-}
 .z-0{
   z-index: 0;
 }
@@ -691,8 +704,8 @@ textarea{
 .-mt-4{
   margin-top: -1rem;
 }
-.mt-28{
-  margin-top: 7rem;
+.mt-24{
+  margin-top: 6rem;
 }
 .mt-40{
   margin-top: 10rem;
@@ -1026,6 +1039,9 @@ textarea{
 .pt-10{
   padding-top: 2.5rem;
 }
+.pt-24{
+  padding-top: 6rem;
+}
 .pt-28{
   padding-top: 7rem;
 }
@@ -1048,10 +1064,6 @@ textarea{
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 .text-5xl{
   font-size: 3rem;
@@ -1425,6 +1437,10 @@ textarea{
     flex-wrap: wrap;
   }
 
+  .md\:items-center{
+    align-items: center;
+  }
+
   .md\:self-center{
     align-self: center;
   }
@@ -1446,6 +1462,11 @@ textarea{
     padding-top: 0px;
   }
 
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
@@ -1454,11 +1475,6 @@ textarea{
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-white{
@@ -1479,6 +1495,10 @@ textarea{
 
   .lg\:-mt-9{
     margin-top: -2.25rem;
+  }
+
+  .lg\:min-h-0{
+    min-height: 0px;
   }
 
   .lg\:max-w-\[550px\]{

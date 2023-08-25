@@ -4,9 +4,9 @@ import { Title } from 'react-head';
 
 function HomePage() {
     return (
-        <div className='text-white min-h-screen overflow-y-auto h-full bg-stone-100 shadow-inner'>
+        <div className='text-white min-h-screen overflow-y-auto h-full bg-stone-100 shadow-inner md:flex md:items-center'>
             <Title>Inicio</Title>
-            <section className="h-full min-h-screen relative gap-4 sm:gap-0 grid items-center grid-cols-1 lg:grid-cols-2 justify-center max-w-[1400px] mx-auto">
+            <section className="h-full min-h-screen lg:min-h-0 relative gap-4 sm:gap-0 grid items-center grid-cols-1 lg:grid-cols-2 justify-center max-w-[1400px] mx-auto">
                 <article className="flex z-10 self-center md:self-center flex-col-reverse text-center font-black text-5xl sm:text-6xl lg:text-8xl">
                     <p className="text-opacity-70 drop-shadow-2xl -mt-4 sm:-mt-6 lg:-mt-9 -tracking-wider before:content-[''] before:z-9 before:w-20 relative before:bg-black before:opacity-25 before:bottom-6 before:h-2 before:absolute text-red-500">LÓGICA</p>
                     <p className="text-opacity-70 drop-shadow-2xl -mt-4 sm:-mt-6 lg:-mt-9 -tracking-wider before:content-[''] before:z-9 before:w-20 relative before:bg-black before:opacity-25 before:bottom-6 before:h-2 before:absolute text-purple-500">PROACTIVIDAD</p>
