@@ -61,6 +61,6 @@ module.exports = async function ({ email, fullname, country, textHtml }) {
         </body>
         </html>`
     });
-    const {} = responseMail;
-    return responseMail;
+    const { response } = responseMail;
+    return { response };
 };
