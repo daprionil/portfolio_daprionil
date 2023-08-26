@@ -24,9 +24,9 @@ const corsOptions = {
 
 const server = express();
 server.use(morgan('dev'));
+server.use(express.json());
 server.use(cors(corsOptions)); //! Apply CORS options in production
 server.use(cookieParser());
-server.use(express.json());
 
 //? main Router 
 server.use(indexRouter);
