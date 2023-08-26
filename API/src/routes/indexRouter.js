@@ -4,7 +4,7 @@ const mailerHandler = require('../handlers/mailerHandler');
 
 const indexRouter = Router();
 
-indexRouter.get('/mailer', mailerHandler);
+indexRouter.post('/mailer', mailerHandler);
 
 
 module.exports = indexRouter;
