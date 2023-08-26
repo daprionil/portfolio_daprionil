@@ -775,8 +775,8 @@ textarea{
 .min-h-screen{
   min-height: 100vh;
 }
-.w-10{
-  width: 2.5rem;
+.min-h-\[50vh\]{
+  min-height: 50vh;
 }
 .w-12{
   width: 3rem;
@@ -1606,4 +1606,20 @@ textarea{
 
 .\[\&\:nth-child\(even\)\]\:flex-row-reverse:nth-child(even){
   flex-direction: row-reverse;
+}
+
+.\[\&\>div\:nth-child\(0\)\]\:pt-20>div:nth-child(0){
+  padding-top: 5rem;
+}
+
+.\[\&\>div\:nth-child\(1\)\]\:pt-20>div:nth-child(1){
+  padding-top: 5rem;
+}
+
+.\[\&\>div\:nth-child\(1\)\]\:pt-28>div:nth-child(1){
+  padding-top: 7rem;
+}
+
+.\[\&\>section\:nth-child\(1\)\]\:pt-28>section:nth-child(1){
+  padding-top: 7rem;
 }
