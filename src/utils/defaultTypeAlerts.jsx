@@ -18,6 +18,20 @@ function sweetFalse({message}){
     })
 }
 
+
+function sweetSuccess({message}){
+    mySwal.fire({
+        title:'Tarea realiza correctamente',
+        html: <>
+            <p className="pb-6">{message}</p>
+            <button onClick={Swal.close} className="btn bg-green-300">Aceptar</button>
+        </>,
+        icon:'success',
+        showConfirmButton:false
+    })
+}
+
 export {
-    sweetFalse
+    sweetFalse,
+    sweetSuccess
 }

@@ -7,18 +7,16 @@ async function sendMail({fullname, email, country, description:textHtml}){
 
     //! Send mail proccess
     const optionsFetch = {
-        method: 'POST',
+        method: "POST",
         headers:{
-            'Content-Type':'json/application'
+            "Content-Type": "application/json",
         },
-        body: JSON.stringify(objFieldsValue)
+        body: JSON.stringify(objFieldsValue),
     };
     const response = await fetch(`${import.meta.env.VITE_URL_API}/mailer`,optionsFetch);
     const data = await response.json();
 
-    console.log(data);
-
-    return objFieldsValue
+    return data
 }
 
 export default sendMail;

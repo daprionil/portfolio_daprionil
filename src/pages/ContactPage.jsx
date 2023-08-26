@@ -2,8 +2,9 @@ import { Title } from 'react-head';
 import { ReactComponent as WaveContact } from '../assets/wave_contact.svg';
 import { useState } from 'react';
 import validationForm from '../utils/validationForm';
-import { sweetFalse } from '../utils/defaultTypeAlerts';
+import { sweetFalse, sweetSuccess } from '../utils/defaultTypeAlerts';
 import sendMail from '../controllers/sendMail';
+import Loader from '../elements/Loader';
 
 const initialValuesForm = {
     fullname:'',
@@ -15,7 +16,9 @@ const initialValuesForm = {
 function ContactPage() {
     const [ valuesForm, setValuesForm ] = useState(initialValuesForm);
     const [ validationsFields, setValidationsFields ] = useState({});
+    const [ isLoading, setIsLoading ] = useState(false);
 
+    const resetState = (set, val) => set(val);
 
     //!This function is exectute by each input in form
     const handleChangeInput = ({target:{name,value}}) => {
@@ -36,18 +39,33 @@ function ContactPage() {
     //! This fuction will validate the values before sending
     const handleSubmit = async evt => {
         evt.preventDefault();
-        
+        const nameRequested = valuesForm.fullname;
+
         //* Revalidate form width current values
         const resultValidation = validationForm(valuesForm);
         setValidationsFields(resultValidation);
 
         //! Validate if exist current errors in form
-        const validationErrorsExists = Object.values(validationsFields).filter(v => v).length === 0;
+        const validationErrorsExists = Object.values(resultValidation).filter(v => v).length === 0;
         
         //? If Validation is true, then sendEmail
         if(validationErrorsExists){
+            resetState(setIsLoading, true);
+            
             const responseMail = await sendMail(valuesForm);
-            console.log(responseMail);
+            
+            //? Set states
+            resetState(setIsLoading, false);
+            resetState(setValuesForm, initialValuesForm);
+            resetState(setValidationsFields, {});
+            
+            //? Validate if the request is succesful
+            const validationSuccessOrDeclined = /ok/i.test(responseMail.response);
+            if(validationSuccessOrDeclined){
+                sweetSuccess({message:`${nameRequested} tu mensaje ha sido enviado correctamente`});
+                return;
+            }
+            sweetFalse({message:'Ha ocurrido un error, intentalo de nuevo más tarde'});
             return;
         }
 
@@ -116,12 +134,16 @@ function ContactPage() {
                             >
                             </textarea>
                         </label>
-                        <input
-                            onChange={handleChangeInput}
-                            type="submit"
-                            value="Enviar"
-                            className="btn bg-blue-400 text-2xl mx-auto"
-                        />
+                        {
+                            isLoading ?
+                                <Loader />
+                            :   <input
+                                    onChange={handleChangeInput}
+                                    type="submit"
+                                    value="Enviar"
+                                    className="btn bg-blue-400 text-2xl mx-auto"
+                                />
+                        }
                     </form>
                 </article>
             </div>
