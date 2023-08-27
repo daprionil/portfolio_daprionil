@@ -4,7 +4,7 @@ import { Title } from 'react-head';
 
 function HomePage() {
     return (
-        <section className='text-white min-h-screen h-full bg-stone-100 shadow-inner'>
+        <section className='text-white min-h-screen h-full overflow-y-auto flex content-center bg-stone-100 shadow-inner'>
             <Title>Inicio</Title>
             <article className=" relative gap-4 sm:gap-0 grid items-center grid-cols-1 lg:grid-cols-2 justify-center max-w-[1400px] mx-auto">
                 <div className="flex z-10 self-center md:self-center flex-col-reverse text-center font-black text-5xl sm:text-6xl lg:text-8xl">
@@ -19,7 +19,7 @@ function HomePage() {
                         alt="home_portfolio"
                         className='max-w-[400px] lg:max-w-[550px] rounded-xl absolute -top-1/3 sm:-top-[25%] md:top-[20%] mx-auto lg:top-1/2 transform md:-translate-y-1/2'
                     />
-                    <h1 className='absolute top-1/3 sm:bottom-[15%] lg:top-auto md:bottom-[20%] drop-shadow-[0_0_20px_black] md:text-6xl text-center text-white font-black text-5xl'>
+                    <h1 className='absolute whitespace-nowrap top-1/3 sm:bottom-[25%] lg:top-auto md:bottom-[30%] drop-shadow-[0_0_20px_black] md:text-5xl lg:text-7xl text-center text-white font-black text-5xl'>
                         Full Stack Web <br /> Developer
                     </h1>
                 </div>
