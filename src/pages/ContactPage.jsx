@@ -1,17 +1,18 @@
 import { Title } from 'react-head';
-import { ReactComponent as WaveContact } from '../assets/wave_contact.svg';
 import { useState } from 'react';
+
 import validationForm from '../utils/validationForm';
-import { sweetFalse, sweetSuccess } from '../utils/defaultTypeAlerts';
 import sendMail from '../controllers/sendMail';
 import Loader from '../elements/Loader';
+import { ReactComponent as WaveContact } from '../assets/wave_contact.svg';
+import { sweetFalse, sweetSuccess } from '../utils/defaultTypeAlerts';
 
 const initialValuesForm = {
     fullname:'',
     email:'',
     country:'',
     description:''
-}
+};
 
 function ContactPage() {
     const [ valuesForm, setValuesForm ] = useState(initialValuesForm);
@@ -74,7 +75,7 @@ function ContactPage() {
     };
 
     return (
-        <section className="min-h-screen pt-24 shadow-inner-white bg-yellow-400 flex items-center justify-center text-white relative">
+        <section className="min-h-screen md:pt-24 shadow-inner-white bg-yellow-400 flex items-center justify-center text-white relative">
             <Title>Contactame</Title>
             <div className="flex gap-3 items-center h-full justify-center flex-col p-2 w-full">
                 <h1 className="title-h1 text-5xl md:pt-0 pt-28">Contactame</h1>
